@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import 'animate.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+    .btn{
+        @apply px-5 py-2 text-[15px] z-10 overflow-hidden after:duration-300 rounded border-2 border-violet-600 text-violet-600 hover:text-white after:w-[45%] after:h-[110%] after:bg-violet-600 relative after:absolute after:rounded-[50px] after:-bottom-[45px] after:-left-[30px] hover:after:scale-[6] after:-z-[1] active:after:bg-white active:text-violet-600 hover:outline-none;
+    }
+    .addImage{
+        @apply w-[20%] absolute top-0 bg-red-600
+    }
+}
+.sha{
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+.pers{
+    perspective: 1500px;
+}
+.pers:hover .rotate-z{
+    transform: rotateX(25deg);
+}
+#padding{
+    padding: 0px;
+}
+.added{
+    background-color: red;
+}
+.swal2-container {
+    z-index: 2000 !important;
+  }
